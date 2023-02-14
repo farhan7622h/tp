@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        background-image: linear-gradient(to right top, #f85037, #fd7435, #ff9439, #ffb146, #ffcc5b);
+    }
+
+    nav {
+        background-color: white;
+        position: relative;
+        margin: 20px auto;
+        width: 90vw;
+        border: 2px solid black;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        font-family: monospace;
+        border-radius: 8px;
+        box-shadow: 10px 5px 5px red;
+        /* box-shadow: 7px 7px; */
+    }
+
+    #userInfo {
+        /* border: 2px solid black;  */
+        display: flex;
+        justify-content: space-between;
+        width: 12vw;
+
+    }
+
+    #votingDiv {
+        background-color: white;
+        position: relative;
+        margin: 60px auto;
+        width: 80vw;
+        height: 60vh;
+        border: 2px solid black;
+        /* box-shadow: 12px 12px white; */
+        border-radius: 8px;
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: monospace;
+        border-top: 2px solid red;
+        border-left: 2px solid red;
+        box-shadow: 10px 5px 5px red;
+    }
+
+    #votingArea {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin: 20px auto;
+        border: 2px solid black;
+        width: 70vw;
+        height: 46vh;
+        border-radius: 8px;
+        border-top: 2px solid red;
+        border-left: 2px solid red;
+        box-shadow: 10px 5px 5px red;
+    }
+
+    .box {
+        width: 50%;
+        /* border: 2px solid purple; */
+    }
+
+    #img1 {
+        width: 5vw;
+
+    }
+
+    #img2 {
+        width: 5vw;
+        height: 10vh;
+    }
+
+    #votingOptions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .lang {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 30vw;
+        height: 15vh;
+        /* border: 2px solid rgb(66, 225, 71); */
+    }
+
+    .votePercentage {
+        width: 25vw;
+        height: 4vh;
+        border: 2px solid black;
+        border-radius: 4px;
+        border-top: 2px solid red;
+        border-left: 2px solid red;
+        box-shadow: 3px 3px 3px red;
+    }
+
+    #summary {
+        position: relative;
+        left: 50px;
+        /* border: 2px solid; */
+    }
+
+    #langImg {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        margin: 10px auto;
+        width: 24vw;
+        height: 8vh;
+        position: relative;
+        left: 40px;
+    }
+
+    .size {
+        width: 5vw;
+    }
+
+    .count {
+        color: #f85037;
+        display: flex;
+        width: 34.8vw;
+        /* border: 2px solid; */
+        margin-top: 25px;
+    }
+
+    #vc1{
+        position: relative;
+        left: 62px;
+    }
+
+    #vc2{
+        position: relative;
+        left: 234px;
+    }
+
+    #pc1{
+        position: relative;
+        left: 62px;
+    }
+
+    #pc2{
+        position: relative;
+        left: 234px;
+    }
+
+    #winner{
+        margin-top: 30px;
+        width: 30.8vw;
+        color: #f85037;
+        /* border: 2px solid; */
+    }
+
+    #winimg{
+        
+        width: 7vw;
+    }
+</style>
+
+<body>
+    <nav>
+        <p>Voting System</p>
+        <div id="userInfo">
+            <p>farhan31523h</p>
+            <p>LogOut</p>
+        </div>
+    </nav>
+
+    <div id="votingDiv">
+
+        <h1>Vote For Your Favorite Programing Language</h1>
+
+
+        <div id="votingArea">
+
+
+            <div id="votingOptions" class="box">
+
+                <div class="lang">
+                    <img src="1.png" id="img1" alt="">
+
+                    <div class="votePercentage">
+                        <p id="per1">0%</p>
+                    </div>
+                </div>
+
+
+                <div class="lang">
+                    <img src="2.png" id="img2" alt="">
+
+                    <div class="votePercentage">
+                        <p id="per2">0%</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="summary" class="box">
+                <div id="langImg">
+                    <img src="1.png" class="size" alt="">
+                    <img src="2.png" class="size" alt="">
+                </div>
+
+                <div class="count">
+                    <p>Total Count:</p>
+                    <p id="vc1">4</p>
+                    <p id="vc2">5</p>
+                </div>
+
+                <div class="count">
+                    <p>Total Count:</p>
+                    <p id="pc1">4</p>
+                    <p id="pc2">5</p>
+                </div>
+
+                <div id="winner">
+                    <h3>And the winner is</h1>
+                        <img src="1.png" id="winimg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
